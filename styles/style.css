@@ -1,31 +1,106 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 .header {
-  padding: 10px;
   position: relative;
+  padding: 10px;
 }
 
 .header__object {
   position: absolute;
-  inset-block-start: 8px;
-  inset-inline-end: 19px;
+  max-width: fit-content;
   color: var(--accent-color);
   font-family: var(--main-font);
   font-size: 18px;
   line-height: 1.38;
   text-transform: uppercase;
-  max-width: fit-content;
+  inset-block-start: 11px;
+  inset-inline-end: 19px;
 }
 .header__object::after {
   content: "";
   display: inline-block;
-  inline-size: 9px;
-  block-size: 9px;
-  border-radius: 50%;
-  margin-block-end: 2px;
   margin-inline-start: 10px;
+  margin-block-end: 2px;
+  border-radius: 50%;
   background-color: var(--accent-color);
   filter: drop-shadow(0px 0px 4px var(--accent-color));
+  inline-size: 9px;
+  block-size: 9px;
 }
+
+.decorated-zone::before {
+  box-sizing: border-box;
+  content: "";
+  position: absolute;
+  inset-block-end: 10px;
+  inset-inline-start: 10px;
+  width: 25px;
+  height: 25px;
+  border-left: 1px solid var(--nav-color);
+  border-bottom: 1px solid var(--nav-color);
+}
+
+.decorated-zone::after {
+  box-sizing: border-box;
+  content: "";
+  position: absolute;
+  inset-block-start: 10px;
+  inset-inline-end: 10px;
+  width: 25px;
+  height: 25px;
+  border-top: 1px solid var(--nav-color);
+  border-right: 1px solid var(--nav-color);
+}
+
+.header__theme-menu {
+  display: flex;
+  justify-content: end;
+  padding-block-start: 65px;
+}
+
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+.header__theme-menu-item {
+  box-sizing: border-box;
+  height: 23px;
+}
+
+.header__theme-menu-button {
+  border: none;
+  padding: 0;
+  padding: 0 13px;
+  color: var(--nav-color);
+  font-family: var(--main-font);
+  line-height: 1;
+  background-color: transparent;
+  cursor: pointer;
+  text-transform: lowercase;
+}
+
+.header__theme-menu-item:has(.header__theme-menu-button_active) {
+  outline: 1px solid var(--nav-color);
+}
+
+.header__theme-menu-item:hover {
+  outline: 1px solid var(--accent-nav-color);
+}
+
+.header__theme-menu-item:active {
+  border-bottom: 1px solid var(--nav-color);
+  outline: none;
+}
+
+.header__title {
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  color: var(--heading-color);
+  text-shadow: 4px 4px 0 var(--accent-color);
+  line-height: 0.82;
+  font-weight: 700;
+}
+
 
 /*добавить переменную для трейгольничка в углах header'a, что автоматически поиционировался*/
 
