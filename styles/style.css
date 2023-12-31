@@ -60,12 +60,14 @@
 .header__theme-menu-list {
   display: flex;
   flex-direction: column;
-  gap: 13px;
+  gap: 10px;
 }
 
 .header__theme-menu-item {
   box-sizing: border-box;
-  height: 23px;
+  display: flex;
+  align-items: start;
+  height: 24px;
 }
 
 .header__theme-menu-button {
@@ -82,13 +84,17 @@
 
 .header__theme-menu-item:has(.header__theme-menu-button_active) {
   outline: 1px solid var(--nav-color);
+  pointer-events: none
 }
 
 .header__theme-menu-item:hover {
   outline: 1px solid var(--accent-nav-color);
 }
 
-.header__theme-menu-item:active {
+.header__theme-menu-item:focus {
+  outline: none;
+}
+.header__theme-menu-item .header__theme-menu-button:focus-visible {
   border-bottom: 1px solid var(--nav-color);
   outline: none;
 }
@@ -99,8 +105,20 @@
   text-shadow: 4px 4px 0 var(--accent-color);
   line-height: 0.82;
   font-weight: 700;
+  padding-block-start: 65px;
 }
 
+.header__description {
+  width: 100%;
+  max-width: 355px;
+  margin-block-start: 55px;
+}
+
+.title-decor {
+  color: var(--bg-color);
+  background-color: var(--accent-color);
+  font-weight: 700;
+}
 
 /*добавить переменную для трейгольничка в углах header'a, что автоматически поиционировался*/
 
