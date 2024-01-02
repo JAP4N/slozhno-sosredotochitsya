@@ -1,6 +1,16 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 .header {
   position: relative;
+  display: grid;
+  grid-template: 
+  minmax(min-content, auto) 
+  minmax(min-content, auto)
+  minmax(min-content, auto)
+  / 1fr 1fr;
+  grid-template-areas: 
+  "nav nav"
+  "heading heading"
+  "description description";
   padding: 10px;
 }
 
@@ -28,31 +38,32 @@
 }
 
 .decorated-zone::before {
-  box-sizing: border-box;
   content: "";
   position: absolute;
-  inset-block-end: 10px;
-  inset-inline-start: 10px;
+  box-sizing: border-box;
   width: 25px;
   height: 25px;
-  border-left: 1px solid var(--nav-color);
   border-bottom: 1px solid var(--nav-color);
+  border-left: 1px solid var(--nav-color);
+  inset-block-end: 10px;
+  inset-inline-start: 10px;
 }
 
 .decorated-zone::after {
-  box-sizing: border-box;
   content: "";
   position: absolute;
-  inset-block-start: 10px;
-  inset-inline-end: 10px;
+  box-sizing: border-box;
   width: 25px;
   height: 25px;
   border-top: 1px solid var(--nav-color);
   border-right: 1px solid var(--nav-color);
+  inset-block-start: 10px;
+  inset-inline-end: 10px;
 }
 
 .header__theme-menu {
   display: flex;
+  grid-area: nav;
   justify-content: end;
   padding-block-start: 65px;
 }
@@ -60,31 +71,34 @@
 .header__theme-menu-list {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 12px;
 }
 
 .header__theme-menu-item {
-  box-sizing: border-box;
-  display: flex;
-  align-items: start;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 68px;
   height: 24px;
 }
 
 .header__theme-menu-button {
+  position: absolute;
   border: none;
   padding: 0;
-  padding: 0 13px;
   color: var(--nav-color);
   font-family: var(--main-font);
   line-height: 1;
+  text-transform: lowercase;
   background-color: transparent;
   cursor: pointer;
-  text-transform: lowercase;
+  inset-block-start: 7%;
+  inset-inline-start: 18%;
 }
 
 .header__theme-menu-item:has(.header__theme-menu-button_active) {
   outline: 1px solid var(--nav-color);
-  pointer-events: none
+  pointer-events: none;
 }
 
 .header__theme-menu-item:hover {
@@ -96,28 +110,33 @@
 }
 .header__theme-menu-item .header__theme-menu-button:focus-visible {
   border-bottom: 1px solid var(--nav-color);
+  padding-block-end: 3px;
   outline: none;
 }
 
 .header__title {
-  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-  color: var(--heading-color);
-  text-shadow: 4px 4px 0 var(--accent-color);
-  line-height: 0.82;
-  font-weight: 700;
+  grid-area: heading;
   padding-block-start: 65px;
+  color: var(--heading-color);
+  font-weight: 700;
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  line-height: 0.82;
+  text-shadow: 4px 4px 0 var(--accent-color);
 }
 
 .header__description {
+  grid-area: description;
   width: 100%;
   max-width: 355px;
   margin-block-start: 55px;
+  margin-block-end: 66px;
+  white-space: pre-line;
 }
 
 .title-decor {
   color: var(--bg-color);
-  background-color: var(--accent-color);
   font-weight: 700;
+  background-color: var(--accent-color);
 }
 
 /*добавить переменную для трейгольничка в углах header'a, что автоматически поиционировался*/
@@ -126,3 +145,5 @@
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   background-color: var(--bg-color);
 }
+
+

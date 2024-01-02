@@ -12,4 +12,5 @@
   --heading-color: #DB00FF;
   --nav-color: #FF0070;
   --accent-nav-color: rgba(255, 0, 112, 0.40);
+  --back-img: url(/images/cover-image-dark.png) no-repeat center / cover;
 }
