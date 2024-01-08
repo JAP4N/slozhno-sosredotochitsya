@@ -14,7 +14,7 @@
   padding: 10px;
 }
 
-.header__object {
+.header__decor-element {
   position: absolute;
   max-width: fit-content;
   color: var(--accent-color);
@@ -25,7 +25,7 @@
   inset-block-start: 11px;
   inset-inline-end: 19px;
 }
-.header__object::after {
+.header__decor-element::after {
   content: "";
   display: inline-block;
   margin-inline-start: 10px;
@@ -43,8 +43,8 @@
   box-sizing: border-box;
   width: 25px;
   height: 25px;
-  border-bottom: 1px solid var(--nav-color);
-  border-left: 1px solid var(--nav-color);
+  border-bottom: 1px solid var(--accent-color);
+  border-left: 1px solid var(--accent-color);
   inset-block-end: 10px;
   inset-inline-start: 10px;
 }
@@ -55,8 +55,8 @@
   box-sizing: border-box;
   width: 25px;
   height: 25px;
-  border-top: 1px solid var(--nav-color);
-  border-right: 1px solid var(--nav-color);
+  border-top: 1px solid var(--accent-color);
+  border-right: 1px solid var(--accent-color);
   inset-block-start: 10px;
   inset-inline-end: 10px;
 }
@@ -86,37 +86,36 @@
   position: absolute;
   border: none;
   padding: 0;
-  color: var(--nav-color);
+  width: 100%;
+  color: var(--accent-color);
   font-family: var(--main-font);
   line-height: 1;
   text-transform: lowercase;
   background-color: transparent;
   cursor: pointer;
-  inset-block-start: 7%;
-  inset-inline-start: 18%;
+  inset-block-start: 6%;
 }
 
 .header__theme-menu-item:has(.header__theme-menu-button_active) {
-  outline: 1px solid var(--nav-color);
+  outline: 1px solid var(--accent-color);
   pointer-events: none;
 }
 
 .header__theme-menu-item:hover {
-  outline: 1px solid var(--accent-nav-color);
+  outline: 1px solid var(--accent-hover-color);
 }
 
-.header__theme-menu-item:focus {
+.header__theme-menu-button:focus {
   outline: none;
 }
-.header__theme-menu-item .header__theme-menu-button:focus-visible {
-  border-bottom: 1px solid var(--nav-color);
+.header__theme-menu-button:focus-visible {
+  border-bottom: 1px solid var(--accent-color);
   padding-block-end: 3px;
-  outline: none;
 }
 
 .header__title {
   grid-area: heading;
-  padding-block-start: 65px;
+  padding-block-start: 69px;
   color: var(--heading-color);
   font-weight: 700;
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
@@ -129,21 +128,19 @@
   width: 100%;
   max-width: 355px;
   margin-block-start: 55px;
-  margin-block-end: 66px;
+  margin-block-end: 56px;
   white-space: pre-line;
 }
 
 .title-decor {
-  color: var(--bg-color);
+  color: var(--extra-color);
   font-weight: 700;
   background-color: var(--accent-color);
 }
 
-/*добавить переменную для трейгольничка в углах header'a, что автоматически поиционировался*/
-
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
-  background-color: var(--bg-color);
+  background:var(--extra-color) var(--back-img);
 }
 
 

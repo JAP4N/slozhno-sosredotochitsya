@@ -4,13 +4,11 @@
 */
 
 :root {
+  --main-color: #F1B2CE;
   --main-font: 'IBM Plex Mono';
-  --bg-color: #000028;
-  --text-color: #F1B2CE;
-  --accent-color: #FF0070;
-  --subtitle-color: #000028;
+  --extra-color: #000028;
   --heading-color: #DB00FF;
-  --nav-color: #FF0070;
-  --accent-nav-color: rgba(255, 0, 112, 0.40);
-  --back-img: url(/images/cover-image-dark.png) no-repeat center / cover;
+  --accent-color: #FF0070;
+  --accent-hover-color: rgba(255, 0, 112, 0.40);
+  --back-img: fixed url(/images/cover-image-dark.png) no-repeat center / cover;
 }
