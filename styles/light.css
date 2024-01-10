@@ -6,6 +6,7 @@
   --accent-color: #FF8DCB;
   --accent-hover-color: rgba(50, 49, 45, 0.40);
   --back-img: fixed url(/images/cover-image-light.png) no-repeat center / cover;
+  --special-space: 10px;
 }
 
 .page.theme_light .decorated-zone::before {
@@ -43,6 +44,7 @@
     --accent-color: #FF8DCB;
     --accent-hover-color: rgba(50, 49, 45, 0.40);
     --back-img: fixed url(/images/cover-image-light.png) no-repeat center / cover;
+    --special-space: 10px;  
   }
 
   .page.theme_auto .decorated-zone::before {

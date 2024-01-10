@@ -1,4 +1,8 @@
-/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
+.page {
+  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  background:var(--extra-color) var(--back-img);
+}
+
 .header {
   position: relative;
   display: grid;
@@ -11,7 +15,7 @@
   "nav nav"
   "heading heading"
   "description description";
-  padding: 10px;
+  padding: var(--special-space);
 }
 
 .header__decor-element {
@@ -136,11 +140,44 @@
   color: var(--extra-color);
   font-weight: 700;
   background-color: var(--accent-color);
+  font-size: 18px;
 }
 
-.page {
-  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
-  background:var(--extra-color) var(--back-img);
+.content {
+  padding-inline-start: var(--special-space);
+  padding-inline-end: var(--special-space);
 }
 
+.content__reasons {
+  padding-block-start: 40px;
+}
 
+.content__reasons-item {
+  padding-block-start: 20px;
+}
+
+.content__reasons-paragraph {
+  padding-block-start: 10px;
+}
+
+.heading-decor {
+  color: var(--accent-color);
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.paragraph-decor {
+  color: var(--main-color);
+}
+
+.content__attension {
+  padding-block-start: 50px;
+}
+
+.content__attension-item {
+  padding-block-start: 20px;
+}
+
+.content__attension-paragraph {
+  padding-block-start: 10px;
+}
