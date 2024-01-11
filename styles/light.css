@@ -5,7 +5,7 @@
   --heading-color: #FFC2E6;
   --accent-color: #FF8DCB;
   --accent-hover-color: rgba(50, 49, 45, 0.40);
-  --back-img: fixed url(/images/cover-image-light.png) no-repeat center / cover;
+  --back-img: fixed url(../images/cover-image-light.png) no-repeat center / cover;
   --special-space: 10px;
   --specific-spacebar: 10px;
 }
@@ -48,7 +48,7 @@
     --heading-color: #FFC2E6;
     --accent-color: #FF8DCB;
     --accent-hover-color: rgba(50, 49, 45, 0.40);
-    --back-img: fixed url(/images/cover-image-light.png) no-repeat center / cover;
+    --back-img: fixed url(../images/cover-image-light.png) no-repeat center / cover;
     --special-space: 10px;  
     --specific-spacebar: 10px;
   }
