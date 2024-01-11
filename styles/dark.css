@@ -13,6 +13,7 @@
   --accent-hover-color: rgba(255, 0, 112, 0.40);
   --back-img: fixed url(/images/cover-image-dark.png) no-repeat center / cover;
   --special-space: 10px;
+  --specific-spacebar: 10px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -25,5 +26,6 @@
   --accent-hover-color: rgba(255, 0, 112, 0.40);
   --back-img: fixed url(/images/cover-image-dark.png) no-repeat center / cover;
   --special-space: 10px;  
+  --specific-spacebar: 10px;
   }
 }

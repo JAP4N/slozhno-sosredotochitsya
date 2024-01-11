@@ -7,6 +7,7 @@
   --accent-hover-color: rgba(50, 49, 45, 0.40);
   --back-img: fixed url(/images/cover-image-light.png) no-repeat center / cover;
   --special-space: 10px;
+  --specific-spacebar: 10px;
 }
 
 .page.theme_light .decorated-zone::before {
@@ -35,6 +36,10 @@
   color: var(--main-color);
 }
 
+.page.theme_light .heading-decor {
+  color: var(--main-color);
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     --main-color: #353430;
@@ -45,6 +50,7 @@
     --accent-hover-color: rgba(50, 49, 45, 0.40);
     --back-img: fixed url(/images/cover-image-light.png) no-repeat center / cover;
     --special-space: 10px;  
+    --specific-spacebar: 10px;
   }
 
   .page.theme_auto .decorated-zone::before {
@@ -73,4 +79,7 @@
     color: var(--main-color);
   }
 
+  .page.theme_auto .heading-decor {
+    color: var(--main-color);
+  }
 }

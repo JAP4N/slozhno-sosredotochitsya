@@ -117,7 +117,7 @@
   padding-block-end: 3px;
 }
 
-.header__title {
+.header__heading {
   grid-area: heading;
   padding-block-start: 69px;
   color: var(--heading-color);
@@ -148,15 +148,15 @@
   padding-inline-end: var(--special-space);
 }
 
-.content__reasons {
+.reasons {
   padding-block-start: 40px;
 }
 
-.content__reasons-item {
+.reasons__item {
   padding-block-start: 20px;
 }
 
-.content__reasons-paragraph {
+.reasons__paragraph {
   padding-block-start: 10px;
 }
 
@@ -170,14 +170,68 @@
   color: var(--main-color);
 }
 
-.content__attension {
+.attension {
   padding-block-start: 50px;
 }
 
-.content__attension-item {
+.attension__item {
   padding-block-start: 20px;
 }
 
-.content__attension-paragraph {
+.attension__paragraph {
   padding-block-start: 10px;
+}
+
+.focus {
+  padding-block-start: 50px;
+}
+
+.focus__subtitle {
+  margin-block-start: 20px;
+}
+
+.focus__item {
+  padding-block-start: 20px;
+}
+
+.focus__mini-subtitle {
+  font-weight: 400;
+}
+
+.focus__paragraph {
+  padding-block-start: 10px;
+}
+.pictures {
+  padding-block-start: 50px;
+  display: grid;
+  grid-template: 
+  min-content
+  min-content
+  min-content
+  min-content
+  min-content
+  min-content
+  / minmax(min-content, 355px);
+  gap: var(--specific-spacebar);
+}
+
+.pictures__img {
+  width: 100%;
+  padding: 0;
+}
+
+.footer {
+  position: relative;
+  margin-block-start: 40px;
+  padding: 10px;
+}
+
+.footer__heading {
+  padding-block-start: 276px;
+  padding-block-end: 275px;
+  color: var(--heading-color);
+  font-weight: 700;
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  line-height: 0.82;
+  text-shadow: 2px 2px 0 var(--accent-color);
 }
