@@ -5,11 +5,16 @@
 
 .header {
   position: relative;
+  block-size: 100vh;
+  min-height: 375px;
   display: grid;
   grid-template: 
-  minmax(min-content, auto) 
+  /* minmax(min-content, auto) 
   minmax(min-content, auto)
-  minmax(min-content, auto)
+  minmax(min-content, auto) */
+  min-content
+  min-content
+  min-content
   / 1fr 1fr;
   grid-template-areas: 
   "nav nav"
@@ -222,6 +227,8 @@
 
 .footer {
   position: relative;
+  block-size: 100vh;
+  min-height: 375px;
   margin-block-start: 40px;
   padding: 10px;
 }
