@@ -1,7 +1,7 @@
 .page.theme_light {
   --main-color: #353430;
   --main-font: 'IBM Plex Mono';
-  --extra-color: #000028;
+  --extra-color: #FFF1F7;
   --heading-color: #FFC2E6;
   --accent-color: #FF8DCB;
   --accent-hover-color: rgba(50, 49, 45, 0.40);
@@ -44,7 +44,7 @@
   :root {
     --main-color: #353430;
     --main-font: 'IBM Plex Mono';
-    --extra-color: #000028;
+    --extra-color: #FFF1F7;
     --heading-color: #FFC2E6;
     --accent-color: #FF8DCB;
     --accent-hover-color: rgba(50, 49, 45, 0.40);
