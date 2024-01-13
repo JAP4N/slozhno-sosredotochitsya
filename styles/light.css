@@ -1,15 +1,3 @@
-.page.theme_light {
-  --main-color: #353430;
-  --main-font: 'IBM Plex Mono';
-  --extra-color: #FFF1F7;
-  --heading-color: #FFC2E6;
-  --accent-color: #FF8DCB;
-  --accent-hover-color: rgba(50, 49, 45, 0.40);
-  --back-img: fixed url(../images/cover-image-light.png) no-repeat center / cover;
-  --special-space: 10px;
-  --specific-spacebar: 10px;
-}
-
 .page.theme_light .decorated-zone::before {
   border-bottom: 1px solid var(--main-color);
   border-left: 1px solid var(--main-color);
@@ -38,6 +26,18 @@
 
 .page.theme_light .heading-decor {
   color: var(--main-color);
+}
+
+.page.theme_light {
+  --main-color: #353430;
+  --main-font: 'IBM Plex Mono';
+  --extra-color: #FFF1F7;
+  --heading-color: #FFC2E6;
+  --accent-color: #FF8DCB;
+  --accent-hover-color: rgba(50, 49, 45, 0.40);
+  --back-img: fixed url(../images/cover-image-light.png) no-repeat center / cover;
+  --special-space: 10px;
+  --specific-spacebar: 10px;
 }
 
 @media (prefers-color-scheme: light) {
