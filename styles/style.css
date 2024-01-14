@@ -23,6 +23,24 @@
   padding: var(--special-space);
 }
 
+.title-decor {
+  color: var(--extra-color);
+  font-weight: 700;
+  background-color: var(--accent-color);
+  font-size: 18px;
+}
+
+.heading-decor {
+  color: var(--accent-color);
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.text-link {
+  text-decoration: none;
+  text-shadow: 2px 2px 0 var(--accent-color);
+}
+
 .header__decor-element {
   position: absolute;
   max-width: fit-content;
@@ -142,13 +160,6 @@
   white-space: pre-line;
 }
 
-.title-decor {
-  color: var(--extra-color);
-  font-weight: 700;
-  background-color: var(--accent-color);
-  font-size: 18px;
-}
-
 .content {
   padding-inline-start: var(--special-space);
   padding-inline-end: var(--special-space);
@@ -165,16 +176,6 @@
 .reasons__paragraph {
   padding-block-start: 10px;
 }
-
-.heading-decor {
-  color: var(--accent-color);
-  font-weight: 700;
-  font-size: 18px;
-}
-
-/* .paragraph-decor {
-  color: var(--main-color);
-} */
 
 .attension {
   padding-block-start: 50px;
