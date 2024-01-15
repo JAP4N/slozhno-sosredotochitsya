@@ -5,6 +5,7 @@
 
 .header {
   position: relative;
+  box-sizing: border-box;
   block-size: 100vh;
   min-height: 375px;
   display: grid;
@@ -73,8 +74,8 @@
   height: 25px;
   border-bottom: 1px solid var(--accent-color);
   border-left: 1px solid var(--accent-color);
-  inset-block-end: 10px;
-  inset-inline-start: 10px;
+  inset-block-end: var(--decor-space);
+  inset-inline-start: var(--decor-space);
 }
 
 .decorated-zone::after {
@@ -85,15 +86,15 @@
   height: 25px;
   border-top: 1px solid var(--accent-color);
   border-right: 1px solid var(--accent-color);
-  inset-block-start: 10px;
-  inset-inline-end: 10px;
+  inset-block-start: var(--decor-space);
+  inset-inline-end: var(--decor-space);
 }
 
 .header__theme-menu {
   display: flex;
   grid-area: nav;
   justify-content: end;
-  padding-block-start: 65px;
+  padding-block-start: var(--nav-space);
 }
 
 .header__theme-menu-list {
@@ -143,7 +144,7 @@
 
 .header__heading {
   grid-area: heading;
-  padding-block-start: 69px;
+  padding-block-start: var(--heading-space);
   font-weight: 700;
   color: var(--heading-color);
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
@@ -219,7 +220,7 @@
   min-content
   min-content
   / minmax(min-content, 355px);
-  gap: var(--specific-spacebar);
+  gap: var(--img-spacebar);
 }
 
 .pictures__img {
@@ -232,7 +233,7 @@
   block-size: 100vh;
   min-height: 375px;
   margin-block-start: 40px;
-  padding: 10px;
+  padding: var(--special-space);
 }
 
 .footer__heading {
@@ -243,4 +244,36 @@
   line-height: 0.82;
   color: var(--heading-color);
   text-shadow: 2px 2px 0 var(--accent-color);
+}
+
+@media (width >= 768px) {
+  :root {
+    --special-space: 20px;
+    --nav-space: 173px;
+    --decor-space: 20px;
+    --heading-space: 174px;
+  }
+
+  .header__decor-element {
+    inset-block-start: 21px;
+    inset-inline-end: 29px;
+  }
+
+  .header__heading {
+    margin-inline-start: -20px;
+  }
+
+  .header {
+    grid-template-areas: 
+    "nav nav"
+    "heading heading"
+    ". description";
+    padding: var(--special-space);
+  }
+
+  .header__description {
+    margin-block-start: 162px;
+    max-width: 364px;
+    align-self: flex-end
+  }
 }
