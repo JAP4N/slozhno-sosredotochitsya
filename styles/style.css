@@ -1,5 +1,4 @@
 .page {
-  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   background:var(--extra-color) var(--back-img);
 }
 
@@ -7,12 +6,9 @@
   position: relative;
   box-sizing: border-box;
   block-size: 100vh;
-  min-height: 375px;
+  min-height: 375px; 
   display: grid;
   grid-template: 
-  /* minmax(min-content, auto) 
-  minmax(min-content, auto)
-  minmax(min-content, auto) */
   min-content
   min-content
   min-content
@@ -209,17 +205,18 @@
 .focus__paragraph {
   padding-block-start: 10px;
 }
+
 .pictures {
   padding-block-start: 50px;
   display: grid;
   grid-template: 
-  min-content
-  min-content
-  min-content
-  min-content
-  min-content
-  min-content
-  / minmax(min-content, 355px);
+  minmax(min-content, auto)
+  minmax(min-content, auto)
+  minmax(min-content, auto)
+  minmax(min-content, auto)
+  minmax(min-content, auto)
+  minmax(min-content, auto)
+  / minmax(min-content, auto);
   gap: var(--img-spacebar);
 }
 
@@ -249,6 +246,7 @@
 @media (width >= 768px) {
   :root {
     --special-space: 20px;
+    --img-spacebar: 20px;
     --nav-space: 173px;
     --decor-space: 20px;
     --heading-space: 174px;
@@ -273,7 +271,158 @@
 
   .header__description {
     margin-block-start: 162px;
+    margin-block-end: 163px; /*Удалить, когда все будет готово*/
     max-width: 364px;
-    align-self: flex-end
+  }
+
+  .reasons {
+    padding-block-start: 60px;
+    display: grid;
+    grid-template: 
+    min-content 
+    1fr
+    / minmax(min-content, auto) 1fr;
+    grid-template-areas: 
+    "title text-block-one"
+    ". text-block-two"
+    ;
+  }
+
+  .reasons__heading {
+    grid-area: title;
+    width: 100%;
+    max-width: 236px;
+  }
+
+  .reasons__item {
+    width: 100%;
+    max-width: 472px;
+    justify-self: end;
+  }
+
+  .reasons__item:first-of-type {
+    padding-block-start: 0;
+  }
+
+  .reasons__item_moving-one {
+    grid-area: text-block-one;
+  }
+
+  .reasons__item_moving-two {
+    grid-area: text-block-two;
+  }
+
+  .attension {
+    padding-block-start: 80px;
+  }
+
+  .attension__heading {
+    width: 100%;
+    max-width: 236px;
+  }
+
+  .focus {
+    padding-block-start: 80px;
+    display: grid;
+    column-gap: 20px;
+    grid-template: 
+    fit-content
+    min-content
+    min-content
+    min-content
+    min-content
+    min-content
+    / minmax(min-content, auto) 1fr;
+    grid-template-areas: 
+    "title subtitle"
+    "title focus_one"
+    ". focus_two"
+    ". focus_three"
+    ". focus_four"
+    ". focus_five"
+    ;
+  }
+
+  .focus__heading {
+    width: 100%;
+    max-width: 236px;
+    grid-area: title;
+  }
+
+  .focus__subtitle {
+    margin-block-start: 0;
+    grid-area: subtitle;
+  }
+
+  .focus__item_one {
+    grid-area: focus_one;
+  }
+
+  .focus__item_two {
+    grid-area: focus_two;
+  }
+
+  .focus__item_three {
+    grid-area: focus_three;
+  }
+
+  .focus__item_four {
+    grid-area: focus_four;
+  }
+
+  .focus__item_five {
+    grid-area: focus_five;
+  }
+
+  .pictures {
+    padding-block-start: 80px;
+    gap: var(--img-spacebar);
+    grid-template: 
+    min-content
+    minmax(min-content, clamp(100px, 192px, 100%))
+    1fr
+    minmax(min-content, clamp(100px, 318px, 100%))
+    / 1fr 1fr 1fr;
+    grid-template-areas: 
+    "heading heading heading"
+    "img_one img_one img_two"
+    "img_three img_four img_two"
+    "img_three img_five img_five"
+    ;
+  }
+
+  .pictures__heading {
+    grid-area: heading;
+  }
+
+  .pictures__img_one {
+    grid-area: img_one;
+  }
+
+  .pictures__img_two {
+    grid-area: img_two;
+    object-fit: cover;
+    height: 100%;
+  }
+
+  .pictures__img_three {
+    grid-area: img_three;
+    object-fit: cover;
+    height: 100%;
+  }
+
+  .pictures__img_four {
+    grid-area: img_four;
+  }
+
+  .pictures__img_five {
+    grid-area: img_five;
+  }
+
+  .footer {
+    margin-block-start: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }

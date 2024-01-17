@@ -6,8 +6,6 @@
   --accent-color: #FF0070;
   --accent-hover-color: rgba(255, 0, 112, 0.40);
   --back-img: fixed url(../images/cover-image-dark.png) no-repeat center / cover;
-  /* --special-space: 10px;
-  --img-spacebar: 10px; */
 }
 
 @media (prefers-color-scheme: dark) {
@@ -19,7 +17,5 @@
   --accent-color: #FF0070;
   --accent-hover-color: rgba(255, 0, 112, 0.40);
   --back-img: fixed url(../images/cover-image-dark.png) no-repeat center / cover;
-  /* --special-space: 10px;  
-  --img-spacebar: 10px; */
   }
 }
