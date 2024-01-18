@@ -5,8 +5,8 @@
 .header {
   position: relative;
   box-sizing: border-box;
-  block-size: 100vh;
   min-height: 375px; 
+  block-size: 100vh;
   display: grid;
   grid-template: 
   min-content
@@ -137,7 +137,7 @@
 
 .header__theme-menu-item:has(.header__theme-menu-button_active) {
   outline: 1px solid var(--accent-color);
-  pointer-events: none;
+  /* pointer-events: none; */
 }
 
 .header__theme-menu-item:hover {
