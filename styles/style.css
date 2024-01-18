@@ -1,11 +1,11 @@
 .page {
-  background:var(--extra-color) var(--back-img);
+  background: var(--extra-color) var(--back-img);
 }
 
 .header {
   position: relative;
-  min-height: 375px; 
   block-size: 100vh;
+  min-block-size: 375px; 
   display: grid;
   grid-template: 
   min-content
@@ -118,7 +118,7 @@
   align-items: center;
   width: 68px;
   height: 24px;
-  z-index: 2;
+  z-index: 0;
 }
 
 .header__theme-menu-button {
@@ -134,7 +134,7 @@
   background-color: transparent;
   cursor: pointer;
   inset-block-start: -3px;
-  z-index: 3;
+  z-index: 1;
 }
 
 .header__theme-menu-button.header__theme-menu-button_active {

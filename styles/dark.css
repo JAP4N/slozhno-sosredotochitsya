@@ -1,4 +1,4 @@
-.page.theme_dark {
+:root .theme_dark {
   --main-color: #F1B2CE;
   --main-font: 'IBM Plex Mono';
   --extra-color: #000028;

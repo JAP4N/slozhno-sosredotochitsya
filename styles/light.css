@@ -1,4 +1,4 @@
-.page.theme_light {
+:root .theme_light {
   --main-color: #353430;
   --main-font: 'IBM Plex Mono';
   --extra-color: #FFF1F7;
