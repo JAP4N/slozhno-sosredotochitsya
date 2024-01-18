@@ -34,8 +34,22 @@
 }
 
 .text-link {
+  box-sizing: border-box;
   text-decoration: none;
   text-shadow: 2px 2px 0 var(--accent-color);
+}
+
+.text-link:hover {
+  border-bottom: 1px solid var(--main-color);
+}
+
+.text-link:focus {
+  outline: none;
+}
+
+.text-link:focus-visible {
+  outline: 1px solid var(--main-color);
+
 }
 
 .header__decor-element {
