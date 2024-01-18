@@ -36,7 +36,7 @@
   color: var(--main-color);
 }
 
-.page.theme_light .header__theme-menu-item:has(.header__theme-menu-button_active) {
+.page.theme_light .header__theme-menu-button.header__theme-menu-button_active {
   outline: 1px solid var(--main-color);
 }
 

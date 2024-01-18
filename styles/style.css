@@ -4,7 +4,6 @@
 
 .header {
   position: relative;
-  box-sizing: border-box;
   min-height: 375px; 
   block-size: 100vh;
   display: grid;
@@ -119,6 +118,7 @@
   align-items: center;
   width: 68px;
   height: 24px;
+  z-index: 2;
 }
 
 .header__theme-menu-button {
@@ -126,21 +126,23 @@
   border: none;
   padding: 0;
   width: 100%;
+  height: 100%;
   font-family: var(--main-font);
   color: var(--accent-color);
   line-height: 1;
   text-transform: lowercase;
   background-color: transparent;
   cursor: pointer;
-  inset-block-start: 6%;
+  inset-block-start: -3px;
+  z-index: 3;
 }
 
-.header__theme-menu-item:has(.header__theme-menu-button_active) {
+.header__theme-menu-button.header__theme-menu-button_active {
   outline: 1px solid var(--accent-color);
-  /* pointer-events: none; */
+  pointer-events: none;
 }
 
-.header__theme-menu-item:hover {
+.header__theme-menu-button:hover {
   outline: 1px solid var(--accent-hover-color);
 }
 
