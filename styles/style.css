@@ -3,7 +3,6 @@
 }
 
 .header {
-  position: relative; 
   display: grid;
   grid-template: 
   min-content
@@ -113,8 +112,6 @@
 }
 
 .header__theme-menu-item {
-  position: relative;
-  z-index: 0;
   justify-content: center;
   align-items: center;
   width: 68px;
@@ -122,8 +119,6 @@
 }
 
 .header__theme-menu-button {
-  position: absolute;
-  z-index: 1;
   width: 100%;
   height: 100%;
   border: none;
@@ -134,7 +129,6 @@
   text-transform: lowercase;
   background-color: transparent;
   cursor: pointer;
-  inset-block-start: -3px;
 }
 
 .header__theme-menu-button.header__theme-menu-button_active {
@@ -446,8 +440,7 @@
 @media (width >= 1024px) {
   .header__theme-menu {
     justify-self: center;
-    padding: 5px;
-
+    padding: 0;
   }
 
   .header__theme-menu-list {
@@ -456,12 +449,8 @@
     gap: 12px;
   }
 
-  .header__theme-menu-button {
-    inset-block-start: -5px;
-  }
-
   .header__heading {
-    padding-block-start: 265px;
+    padding-block-start: 275px;
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem) ;
   }
 
