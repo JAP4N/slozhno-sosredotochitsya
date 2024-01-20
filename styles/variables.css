@@ -11,4 +11,5 @@
   --nav-space: 65px;
   --heading-space: 69px;
   --img-spacebar: 10px;
+  --heading-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
 }

@@ -153,7 +153,7 @@
   padding-block-start: var(--heading-space);
   color: var(--heading-color);
   font-weight: 700;
-  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  font-size: var(--heading-font-size);
   line-height: 0.82;
   text-shadow: 4px 4px 0 var(--accent-color);
 }
@@ -453,7 +453,7 @@
 
   .header__heading {
     padding-block-start: 275px;
-    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem) ;
+    --heading-font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 
   .header__description {
