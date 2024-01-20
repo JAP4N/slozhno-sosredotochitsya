@@ -1,6 +1,6 @@
 :root .theme_dark {
   --main-color: #F1B2CE;
-  --main-font: 'IBM Plex Mono';
+  --main-font: 'IBM Plex Mono', monospace;
   --extra-color: #000028;
   --heading-color: #DB00FF;
   --accent-color: #FF0070;
@@ -12,7 +12,7 @@
 @media (prefers-color-scheme: dark) {
   :root {
   --main-color: #F1B2CE;
-  --main-font: 'IBM Plex Mono';
+  --main-font: 'IBM Plex Mono', monospace;
   --extra-color: #000028;
   --heading-color: #DB00FF;
   --accent-color: #FF0070;
