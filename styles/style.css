@@ -295,11 +295,9 @@
     display: grid;
     grid-template: 
     min-content 
-    1fr
     / minmax(min-content, auto) 1fr;
     grid-template-areas: 
-    "title text-block-one"
-    ". text-block-two"
+    "title reasons__wrapper"
     ;
     column-gap: 20px;
     padding-block-start: 60px;
@@ -311,20 +309,17 @@
     max-width: 236px;
   }
 
+  .reasons__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
   .reasons__item {
     justify-self: end;
   }
 
   .reasons__item:first-of-type {
     padding-block-start: 0;
-  }
-
-  .reasons__item_moving-multitasking {
-    grid-area: text-block-one;
-  }
-
-  .reasons__item_moving-dopamine {
-    grid-area: text-block-two;
   }
 
   .attension {
@@ -339,7 +334,7 @@
   .focus {
     display: grid;
     grid-template: 
-    fit-content
+    min-content
     min-content
     min-content
     min-content
