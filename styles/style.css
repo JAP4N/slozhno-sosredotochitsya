@@ -336,18 +336,10 @@
     grid-template: 
     min-content
     min-content
-    min-content
-    min-content
-    min-content
-    min-content
     / minmax(min-content, auto) 1fr;
     grid-template-areas: 
     "title subtitle"
-    "title focus__sky-and-sun"
-    ". focus_music"
-    ". focus_stroll"
-    ". focus_eat"
-    ". focus_reading"
+    "title focus-block-content"
     ;
     column-gap: 20px;
     padding-block-start: 80px;
@@ -364,24 +356,8 @@
     margin-block-start: 0;
   }
 
-  .focus__item_sky-and-sun {
-    grid-area: focus__sky-and-sun;
-  }
-
-  .focus__item_music {
-    grid-area: focus_music;
-  }
-
-  .focus__item_stroll {
-    grid-area: focus_stroll;
-  }
-
-  .focus__item_eat {
-    grid-area: focus_eat;
-  }
-
-  .focus__item_reading {
-    grid-area: focus_reading;
+  .focus__wrapper {
+    grid-area: focus-block-content;
   }
 
   .pictures {
